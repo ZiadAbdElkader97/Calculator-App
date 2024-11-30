@@ -1,0 +1,85 @@
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+.heading img {
+  width: 60px;
+}
+.heading h1 {
+  color: black;
+  font-size: 30px;
+}
+@media (max-width: 420px) {
+  .heading h1 {
+    font-size: 25px;
+  }
+}
+.calculator {
+  width: 350px;
+  height: auto;
+  margin: 25px auto;
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 420px) {
+  * {
+    font-size: 20px;
+  }
+  .calculator {
+    width: 300px;
+  }
+}
+.monitor .out-put {
+  text-align: right;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 80px 30px 0px;
+}
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+}
+.keyboard-row {
+  display: flex;
+  gap: 15px;
+}
+.keyboard-row .one-block {
+  width: 25%;
+  border-radius: 35px;
+  transition: 0.3s;
+  aspect-ratio: 1/1;
+}
+.keyboard-row .two-block {
+  width: calc(50% + 16px);
+  border-radius: 40px;
+  transition: 0.3s;
+  aspect-ratio: 2/1;
+}
+.keyboard-row .gray {
+  background-color: #d4d4d2;
+  color: black;
+}
+.keyboard-row .gray:hover {
+  background-color: #b8b8b5;
+}
+.keyboard-row .dark-gray {
+  background-color: #505050;
+}
+.keyboard-row .dark-gray:hover {
+  background-color: #454545;
+}
+.keyboard-row .orange {
+  background-color: #ff9500;
+}
+.keyboard-row .orange:hover {
+  background-color: #d57d00;
+}
